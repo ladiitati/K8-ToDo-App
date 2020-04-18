@@ -1,0 +1,13 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: todo-apache2
+  labels:
+    app: web
+spec:
+  containers:
+    - name: todo-apache2
+      image: tfadams/my-apache2
+      ports:
+        - containerPort: 8080
